@@ -7,12 +7,16 @@
 	margin-top: 5%;
 	padding: 1% 0;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
 }
 
 .projContainer {
 	width: 31%;
+	display: flex;
+	align-self: stretch;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .projImage {
@@ -28,6 +32,9 @@
 
 .projectInfo {
 	margin-top: 4%;
+	position: relative;
+	padding-bottom: 50px;
+
 	ul {
 		padding: 0;
 		margin-bottom: 15px;
@@ -67,6 +74,7 @@
     margin: 0;
 		display: flex;
 		flex-direction: row;
+		align-self: unset;
 		align-items: center;
 		justify-content: center;
 	}
@@ -74,8 +82,7 @@
 	.projImage {
 		padding: 2% 0;
     margin-top: 10%;
-    width: 100%;
-    		
+    width: 45%;
 		img {
 			width: 85%;
 		}
@@ -84,7 +91,7 @@
 	.projectInfo {
 		width: 50%;
 		position: relative;
-
+		padding-bottom: 0; 
 		ul {
 			margin-top: 2%;
 		}
@@ -110,7 +117,7 @@
 		flex-direction: column;
 	}	
 
-	.projectInfo {
+	.projectInfo, .projImage {
 		width: 100%;
 	}
 }
