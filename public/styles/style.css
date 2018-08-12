@@ -435,7 +435,7 @@ figcaption {
 .projectInfo {
   margin-top: 4%;
   position: relative;
-  padding-bottom: 50px; }
+  padding-bottom: 80px; }
   .projectInfo ul {
     padding: 0;
     margin-bottom: 15px; }
@@ -733,7 +733,8 @@ p, h4 {
   width: 34%; }
 
 .detailsBox {
-  margin: 0; }
+  margin: 0;
+  padding-right: 25px; }
 
 .detailsContact {
   padding-top: 5%;
@@ -815,8 +816,10 @@ footer p {
     right: 0; }
 
 .formButton {
+  width: 100%;
   color: #EC116E;
-  font-weight: 600; }
+  font-weight: 600;
+  border-width: 3px; }
   .formButton:hover {
     background-color: #9C03AB;
     color: white;
