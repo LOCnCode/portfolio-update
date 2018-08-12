@@ -49,7 +49,7 @@
 			<div class="container aboutContainer">
 				<div class="aboutDetails">
 					<div class="detailsBox">
-						<p class="details aboutText">HI! I'm Laurie. A Front End Web Developer based in Kitchener, Ontario. My favourite part of being a FED is seeing a project from start to finish.  Finding opportunities for re-usable code is so satisfying! Now that I’m done bootcamp, I’m excited to continue building on my Javascript and React skills.  I’m also interested in learning more about Web Accessibility and Node.js. </p>
+						<p class="details aboutText">HI! I'm Laurie. A Front End Web Developer based in Kitchener, Ontario. My favourite part of being a FED is seeing a project from start to finish.  Finding opportunities for re-usable code is so satisfying! Now that I’m done bootcamp, I’m excited to continue building on my Javascript skills while also learning more about Web Accessibility and Vue. </p>
 						<p class="details aboutText">Before coding I was a Department Head who managed a team remotely. During this time I learned that communication and good relationships are key to success. I love exploring green spaces, hitting the rink (on wheels!), or sitting down with great cup of coffee and a good book.</p>
 					</div> <!-- detailsBox ends -->
 				</div> <!-- aboutDetails ends -->
@@ -100,10 +100,10 @@
 					</div> <!-- toolsRow ends -->
 
 					<div class="toolsRow ">
-						<figure>
+<!-- 						<figure>
 							<i class="devicon devicon-react-original"></i>
 							<figcaption>React</figcaption>
-						</figure>
+						</figure> -->
 						<figure>
 							<i class="devicon devicon-gulp-plain"></i>
 							<figcaption>Gulp</figcaption>
@@ -149,10 +149,10 @@
 							<i class="devicon devicon-jquery-plain"></i>
 							<figcaption>Jquery</figcaption>
 						</figure>
-						<figure>
+						<!-- <figure>
 							<i class="devicon devicon-react-original"></i>
 							<figcaption>React</figcaption>
-						</figure>
+						</figure> -->
 					</div> <!-- toolsRow ends -->
 					<div class="toolsRow ">	
 						<figure>
@@ -198,10 +198,11 @@
 									<li>Javascript</li>
 									<li>Responsive</li>
 								</ul>
-								<button><a href="http://laurieoconnor.com/sugarswears/" target="blank">View Live</a></button>
-								<button><a href="https://github.com/LOCnCode/Sugar-Swears" target="blank">Github</a></button>
+								<a class="linkOff" href="http://laurieoconnor.com/sugarswears/" target="blank">View Live</a>
+								<a class="linkOff" href="https://github.com/LOCnCode/Sugar-Swears" target="blank">Github</a>
 							</div>
 						</div> <!-- projContainer ends -->
+
 						<div class="projContainer projectR ">
 							<div class="projImage">
 								<a href="http://laurieoconnor.com/mojo" target="blank"><img src="images/mojo.jpg" alt="Link to view PSD to web conversion site."></a>
@@ -213,24 +214,11 @@
 									<li>Creation of reusable code</li>
 									<li>Responsive</li>
 								</ul>
-								<button><a href="http://laurieoconnor.com/mojo" target="blank">View Live</a></button>
-								<button><a href="https://github.com/LOCnCode/Mojo-PSD-Conversion" target="blank">Github</a></button>
+								<a class="linkOff" href="http://laurieoconnor.com/mojo" target="blank">View Live</a>
+								<a class="linkOff" href="https://github.com/LOCnCode/Mojo-PSD-Conversion" target="blank">Github</a>
 							</div>
 						</div> <!-- projContainer ends -->
-						<!-- <div class="projContainer projectR projectHide">
-							<div class="projImage">
-								<a href="https://christmas-planner-d6c37.firebaseapp.com/ target="blank""><img src="images/ppplaceit.jpg" alt=""></a>
-							</div>
-							<div class="projectInfo">
-								<h4>React Present Planner</h4>
-								<ul>
-									<li>React</li>
-									<li>Firebase</li>
-									<li>Responsive</li>
-								</ul>
-								<button><a href="https://christmas-planner-d6c37.firebaseapp.com/" target="blank">View Live</a></button>
-							</div>
-						</div> <!-- projContainer ends --> -->
+			
 						<div class="projContainer">
 							<div class="projImage imageMargin">
 								<a href="http://laurieoconnor.com/cupcakesthencocktails" target="blank"><img src="images/CTCprojects.jpg" alt="LInk to website where you can chose an alcohol type and then be provided a list of cupcake recipes with that alcohol as an ingredient."></a> 
@@ -242,8 +230,8 @@
 									<li>JSON-based API requests</li>
 									<li>DOM manipulation</li>
 								</ul>
-								<button><a href="http://laurieoconnor.com/cupcakesthencocktails" target="blank">View Live</a></button>
-								<button><a href="https://github.com/LOCnCode/Cupcakes-Then-Cocktails" target="blank">Github</a></button>
+								<a class="linkOff" href="http://laurieoconnor.com/cupcakesthencocktails" target="blank">View Live</a>
+								<a class="linkOff" href="https://github.com/LOCnCode/Cupcakes-Then-Cocktails" target="blank">Github</a>
 							</div>
 						</div> <!-- projContainer ends -->						
 					<!-- </div> projectsWrapper ends -->
@@ -281,8 +269,7 @@
 										<h3>Location</h3>
 									</div>	
 									<div class="contactText">
-										<p>Kitchener, Ontario</p>
-										<p class="relocation">Willing to relocate for the right opportunity.</p>										
+										<p>Kitchener, Ontario</p>									
 									</div> <!-- contactText ends -->
 								</div> <!-- contactSplit ends -->
 							</div>  <!-- detailsContact ends -->
@@ -291,22 +278,22 @@
 
 				<div class="featureContainer contactFeature">
 					<div class="featureBox feature">
-						<form class="contactForm" id="contactForm" method="POST" action="http://www.focuspocus.io/magic/551cd5a20882555d9488a7c8738b97e8">
+				<form class="contactForm" id="contactForm" action="https://formspree.io/sayhello@laurieoconnor.com" method="POST">
 							<div class="innerForm">
 								<div class="formInput">
-					      	<input placeholder="Your name" type="text" tabindex="1" required>	
+					      	<input placeholder="Your Name" type="text" name="name" tabindex="1" required>	
 					      </div>
 					      <div class="formInput">			   
-					      	<input placeholder="Your E-mail" type="email" tabindex="2" required>
+					      	<input placeholder="Your E-mail" type="email" name="_replyto" tabindex="2" required>
 					      </div>
 					      <div class="formInput">					   
-					      	<input placeholder="Your telephone" type="tel" tabindex="3">	
+					      	<input placeholder="Your Telephone" name="_phone" type="tel" tabindex="3">	
 					      </div>
 					      <div class="formInput textarea">					   
-					      	<textarea placeholder="Your message" tabindex="4" required></textarea>
+					      	<textarea placeholder="Your message" name="_message"tabindex="4" required></textarea>
 					      </div>
 							</div> <!-- innerForm ends -->
-				    	<button class="formButton" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>				    
+				    	<button class="formButton" name="submit" type="submit" id="contact-submit" value="Send" data-submit="...Sending">Submit</button>				    
 						</form>
 					</div> <!-- featureBox ends -->
 				</div> <!-- featureContainer ends -->
@@ -323,8 +310,6 @@
 	<script src="dev/scripts/jquery.smooth-scroll.min.js"></script>
 	<script>
 	$(function(){
-		console.log('its ready!');
-
 		$('a').smoothScroll({
 			offset: -50,
 			speed: 1000
