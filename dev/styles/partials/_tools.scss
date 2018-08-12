@@ -1,0 +1,116 @@
+#tools:target {
+	padding-top: 90px;
+}
+
+.toolsContainer {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.toolsfeature {
+	width: 95%;
+	background-color: $PrimaryColour;
+	margin-top: 5%;
+	padding: 4%;
+}
+
+.toolsRow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topRow {
+	padding-bottom: 5%;
+}
+
+ul {
+	color: $PrimaryColour;
+}
+
+li {
+	color: $PrimaryColour;
+	line-height: 22px;
+}
+
+.devicon {
+	margin: 2% 5%;
+	font-size: 90px;
+	color: $Purple;
+}
+
+figure {
+	flex: 1 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+}
+
+figcaption {
+	font-weight: 400; 
+}
+
+.tools2 {
+	display: none;
+}
+
+@media (max-width: 940px) {
+	
+}
+
+@media (max-width: 768px) {
+	.devicon {
+		font-size: 55px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.toolsFeature {
+		width: 100%;
+		margin-top: 7%;
+	}
+
+	.tools1 {
+		display: none;
+	}
+
+	.tools2 {
+		display:inherit !important;
+	}
+	
+	.row2 {
+		padding-bottom: 2%;
+	}
+
+	.devicon {
+		font-size: 45px;
+	}
+
+	figcaption {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 360px) {
+	
+	.toolsfeature {
+    margin-top: 15%;
+  }
+  
+	.devicon {
+		font-size: 26px;
+	}
+
+	figcaption {
+    font-size: 14px;
+	}
+
+	.contactImage {
+		display: none;
+	}
+}

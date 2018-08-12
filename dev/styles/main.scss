@@ -1,0 +1,301 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/nav';
+@import 'partials/tools';
+@import 'partials/projects';
+@import 'partials/about';
+@import 'partials/contactForm';
+
+body {
+	background-color: $Purple;
+}
+
+.home {
+	height: 100vh;
+	background-image: url(../../images/flippedtwin.png);
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: $PrimaryColour;
+	font-size: 20px;
+	text-transform: uppercase;	
+}
+
+.nameSplit {
+	color: $SecondaryColour;
+}
+
+h2 {
+	color: $PrimaryColour;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 6% 0;
+	position: relative;
+	z-index: 1;
+}
+
+h2:after {
+	content: '';
+	background-color: $SecondaryColour;
+	width: 22%;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+}
+
+h3 {
+	color: $PrimaryColour;
+	font-size: 20px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+h3:after {
+	content: '';
+	background-color: $SecondaryColour;
+	width: 30%;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 4% 0;
+	position: relative;
+}
+
+h4:after {
+	content: '';
+	background-color: $SecondaryColour;
+	width: 30%;
+  height: 2px;
+  position: absolute;
+  left: 0px;
+  top: 90%;
+}
+
+p, h4 {
+	color: $PrimaryColour;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;	
+	font-weight: 400;
+}
+
+.section {
+	padding: 2% 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sectionTitle {
+	width: 100%;
+}
+
+.wrapper {
+	width: 80%; 
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	padding: 4% 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.detailsContainer {
+	width: 34%;
+}
+
+.detailsBox {
+	margin: 0;
+}
+
+.detailsContact {
+	padding-top: 5%;
+	padding-left: 6%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.featureContainer {
+	width: 66%;
+}
+
+.feature {
+	width: 75%;
+}
+
+.featureBox {
+	margin: auto;
+	padding: 5%;
+	background-color: $PrimaryColour;
+}
+
+.feature img {
+	width: 100%;
+}
+
+footer {
+	color: $PrimaryColour;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+footer p {
+	padding: 2% 0;
+}
+
+.credit {
+	font-size: 12px;
+	padding-top: 0;
+}
+
+button {
+	background-color: transparent;
+  border: 2px solid $SecondaryColour;
+  margin: 4% 0;
+  padding: 2% 5%;
+  text-transform: uppercase;
+}
+
+button:hover {
+	background-color: $Hover;
+}
+
+button a:hover {
+	color: $PrimaryColour;
+}
+
+.formButton {
+	color: $SecondaryColour;
+	font-weight: 600;
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+		
+	h1 {
+		font-size: 30px;
+		margin: 0;
+    margin-top: 2%;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	.wrapper {
+		width:90%; //measured from psd
+		margin: 0 auto;
+	}
+
+	.detailsContact {
+		flex-direction: column;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	.home {
+		background-image: url(../../images/pic139.png);
+	}
+
+	.projectDetailsContainer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.detailsContainer {
+		width: 100%;
+	}
+
+	.featureContainer {
+		width: 100%;
+	}
+
+	.detailsContact {
+		flex-direction: row;
+		padding-left: 0;
+	}
+}
+
+
+@media (max-width: 660px) {
+	
+	.detailsContainer {
+    width: 100%;
+	}
+
+ .contactFeature {
+		width: 100%;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	h4 {
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	h4:after {
+	  // top: 36%;
+	}
+
+	.container {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.detailsContainer {
+		width: 100%;
+	}
+
+	.detailsContact {
+		padding-left: 0;
+	}
+	
+	.aboutContainer {
+		flex-direction: column;
+	}
+
+	.featureBox {
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+	}
+}
+
+@media (max-width: 360px) {
+
+	.home {
+		height: 80vh;
+	}
+	
+	h1 {
+		font-size: 26px;
+	}
+}

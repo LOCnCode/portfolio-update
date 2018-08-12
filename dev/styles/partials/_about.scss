@@ -1,0 +1,50 @@
+#about:target {
+	padding-top: 90px;
+}
+
+.about {
+	margin-bottom: 2%;
+}
+
+.aboutDetails {
+	width: 55%;
+}
+
+.aboutFeature {
+	width: 45%;
+}
+
+.aboutText {
+	padding: 2% 0;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.aboutDetails {
+		width: 100%;
+	}
+
+	.aboutText {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.aboutFeature {
+		display: none;
+	}	
+}
